@@ -8,6 +8,8 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+Please click on the below screenshot for a video demo on using this application!
+[![Watch the video](./screenshot-for-readme.png)](https://www.youtube.com/watch?v=4vBfjyvpR6g&feature=youtu.be&ab_channel=Christina2021)
 
 ##Table of Contents
 * [Description](#description)
