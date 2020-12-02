@@ -7,9 +7,9 @@ const generateMarkdown = require('./utils/generateMarkdown');
 const questions = [
     'What is the name of your project?',
     'Please enter in a description of your project:',
-    'Please enter the live URL for your website',
-    'Please enter in the command that should be used to install the dependencies:',
-    'Please enter in the command that should be used to run tests:',
+    'Please enter the live URL for your website:',
+    'Please enter any commands needed for installation:',
+    'Please enter any commands needed to run tests:',
     'Please enter usage information for the user:',
     'Please enter information on how a user may contribute to the project:',
     'Please choose a license for your project:',
