@@ -1,6 +1,10 @@
 // function to generate markdown for README
 function generateMarkdown(data) {
 
+    let badge = '';
+    let license = '';
+    let liveURL = '';
+
 //For License Badge and License Link
 switch (data.license) {
     case "MIT":
@@ -25,6 +29,14 @@ switch (data.license) {
         break;
     default:
         badge = '';
+        license = '';
+}
+
+//If website
+if(data.liveSite){
+    liveURL = `Please click [here](${data.liveSite}) to check out this site!`;
+} else {
+    liveURL = '';
 }
 
 
@@ -33,18 +45,23 @@ return `
 ***
 ${badge}
 
-## Description
-${data.description}
-
 ##Table of Contents
+* [Description](#description)
 * [Installation](#installation)
 * [Testing](#testing)
 * [Usage](#usage)
-* [Contributions](#contribution)
+* [Contributing](#contributing)
 * [Questions](#questions)
 * [License](#license)
 
 <br>
+
+## Description
+${data.description}
+
+${liveURL}
+<br>
+
 ## Installation
 Please see the following command in order to use this application:<br>
 \`\`\`bash
@@ -64,14 +81,14 @@ Please see the following instructions on how to use this application: <br>
 ${data.usage}
 <br>
 
-## Contributions
+## Contributing
 Please see the following insturctions on how to contribute to this project: <br>
 ${data.contribution}
 <br>
 
-## Questions
+## Questions?
 Feel free to check out my github profile [here](https://github.com/${data.username})!
-Should you have any questions, you may reach me by e-mail at: ${data.email}.
+Should you have any questions, you may reach me by e-mail at: <a href="mailto:${data.email}?subject=Hi,%20Christina!">${data.email}</a>!.
 
 ## License
 ${license}

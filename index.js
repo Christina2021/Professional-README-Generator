@@ -7,6 +7,7 @@ const generateMarkdown = require('./utils/generateMarkdown');
 const questions = [
     'What is the name of your project?',
     'Please enter in a description of your project:',
+    'Please enter the live URL for your website',
     'Please enter in the command that should be used to install the dependencies:',
     'Please enter in the command that should be used to run tests:',
     'Please enter usage information for the user:',
@@ -42,26 +43,31 @@ function init() {
         {
             type: 'input',
             message: questions[2],
-            name: 'install',
+            name: 'liveSite',
         },
         {
             type: 'input',
             message: questions[3],
-            name: 'test',
+            name: 'install',
         },
         {
             type: 'input',
             message: questions[4],
-            name: 'usage',
+            name: 'test',
         },
         {
             type: 'input',
             message: questions[5],
+            name: 'usage',
+        },
+        {
+            type: 'input',
+            message: questions[6],
             name: 'contribution',
         },
         {
             type: 'list',
-            message: questions[6],
+            message: questions[7],
             name: 'license',
             choices: [
                 "MIT",
@@ -74,12 +80,12 @@ function init() {
         },
         {
             type: 'input',
-            message: questions[7],
+            message: questions[8],
             name: 'username',
         },
         {
             type: 'input',
-            message: questions[8],
+            message: questions[9],
             name: 'email',
         },
     ])
