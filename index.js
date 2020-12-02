@@ -66,9 +66,10 @@ function init() {
             choices: [
                 "MIT",
                 "APACHE-2.0",
-                "GPL-3.0",
-                "BSD-3",
-                "No License",
+                "GNU General Public License-3.0",
+                "BSD-3-Clause",
+                "Unlicense",
+                "None",
             ]
         },
         {
